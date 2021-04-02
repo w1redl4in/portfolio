@@ -38,6 +38,10 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <meta
+            property="og:image"
+            content="https://cdn.discordapp.com/attachments/756656687942729731/827402807530356756/unknown.png"
+          />
         </Head>
         <body>
           <Main />
