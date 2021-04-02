@@ -8,6 +8,8 @@ export const NavbarContainer = styled.nav`
   position: sticky;
   top: 0;
 
+  margin-bottom: 2rem;
+
   > div {
     display: flex;
     align-items: center;

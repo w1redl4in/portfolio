@@ -21,6 +21,10 @@ export const IntroductionContainer = styled.section`
     font-size: ${({ theme }) => theme.fontSize.huge};
     font-weight: 300;
 
+    @media screen and (max-width: 992px) {
+      font-size: 10vw;
+    }
+
     @media screen and (max-width: 576px) {
       font-size: 20vw;
     }
