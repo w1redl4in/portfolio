@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
-import { Particles } from '../components/Particles';
 import { theme, GlobalStyles } from '../styles/';
 
 function MyApp({ Component, pageProps }: AppProps) {
