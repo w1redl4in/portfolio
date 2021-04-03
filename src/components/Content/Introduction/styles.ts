@@ -18,6 +18,7 @@ export const IntroductionContainer = styled.section`
   }
 
   h1 {
+    padding: 0 2rem;
     font-size: ${({ theme }) => theme.fontSize.huge};
     font-weight: 300;
 
