@@ -14,6 +14,8 @@ export const WhitelabelBankContainer = styled.section`
 
   height: auto;
 
+  z-index: 2;
+
   @media (max-width: 992px) {
     padding-top: 15rem;
   }
@@ -36,11 +38,6 @@ export const WhitelabelBankContainer = styled.section`
 
   span {
     color: ${({ theme }) => theme.colors.blue};
-
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
   }
 
   figure {

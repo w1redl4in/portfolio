@@ -8,14 +8,14 @@ export const EcommerceDosCriaContainer = styled.section`
 
   text-align: center;
 
-  background: ${({ theme }) => theme.colors.white};
-
   padding-bottom: 10rem;
   padding-top: 1rem;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
 
   height: auto;
+
+  z-index: 2;
 
   @media (max-width: 992px) {
     padding-top: 15rem;
