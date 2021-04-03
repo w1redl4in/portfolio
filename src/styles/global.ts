@@ -8,6 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    scroll-behavior: smooth;
+    
     @media (max-width: 1080px) {
       font-size: 93.75%; // font-size: 15px;
     }
@@ -25,11 +27,11 @@ export const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
   }
 
   body, #root {
     min-height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
   }
