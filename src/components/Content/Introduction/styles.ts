@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const IntroductionContainer = styled.section`
   max-width: 1100px;
 
-  margin: auto;
+  margin: auto auto auto 0.5rem;
 
   padding-bottom: 15rem;
 
@@ -18,7 +18,7 @@ export const IntroductionContainer = styled.section`
   }
 
   h1 {
-    padding: 0 2rem;
+    /* padding-left: 1rem; */
     font-size: ${({ theme }) => theme.fontSize.huge};
     font-weight: 300;
 
