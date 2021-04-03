@@ -1,4 +1,4 @@
-import { Me } from '../../Me';
+import { Me } from '../../me';
 import { NavbarContainer, NavInfo, Date } from './styles';
 
 export const Navbar: React.FC = () => {
