@@ -19,6 +19,13 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  h1, h2, h3, h4, h5, h6, span, strong, u, b {
+     &::selection {
+       background: ${({ theme }) => theme.colors.black900};
+       color: ${({ theme }) => theme.colors.white};
+     }
+  }
+
 
   body {
     height: auto;
