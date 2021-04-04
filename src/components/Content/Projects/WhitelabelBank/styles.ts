@@ -6,6 +6,12 @@ export const Info = styled.div`
   max-width: 800px;
   width: 100%;
   padding: 2rem;
+
+  > time {
+    margin-top: 1rem;
+    font-size: ${({ theme }) => theme.fontSize.small};
+    font-weight: bold;
+  }
 `;
 
 export const InfoLinks = styled.div`

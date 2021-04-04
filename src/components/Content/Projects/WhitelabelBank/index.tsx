@@ -24,6 +24,7 @@ export const WhitelabelBank: React.FC = () => {
           This was the most difficult project, but also the most rewarding, we
           developed a digital bank from scratch with a tight deadline.
         </p>
+        <time>Jun 2020 — Now</time>
         <InfoLinks>
           {Object.entries(Links).map(([key, value]) => (
             <a key={key} href={value.path} target="_blank">
