@@ -1,10 +1,32 @@
-import { SpotifyContainer } from './styles';
+import { Tech, Technologies } from '../../../Technologies';
+import { Icons } from './constants';
+import { SpotifyContainer, ProjectInfo } from './styles';
 
 export const Spotify: React.FC = () => {
   return (
     <SpotifyContainer>
-      <h1>Hobby</h1>
-      <h2>Spotify UI Clone</h2>
+      <ProjectInfo>
+        <h1>Hobby</h1>
+        <h2>Spotify UI Clone</h2>
+        <p>
+          This project was created in order to practice the Nextjs framework and
+          display: grid. <br />
+          Currently using next-auth with Spotify Provider and Spotify API.
+        </p>
+        <time>April 2021 - Now</time>
+
+        <a href="https://spotify-next-three.vercel.app/" target="_blank">
+          Demo on Vercel
+        </a>
+        <Technologies>
+          {Object.entries(Icons).map(([key, value]) => (
+            <Tech key={key}>
+              <img src={value.path} alt={value.path} />
+              <span>{key}</span>
+            </Tech>
+          ))}
+        </Technologies>
+      </ProjectInfo>
 
       <figure>
         <img
