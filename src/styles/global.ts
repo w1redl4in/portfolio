@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  h1, h2, h3, h4, h5, h6, span, strong, u, b {
+  h1, h2, h3, h4, h5, h6, span, strong, u, b, p {
      &::selection {
        background: ${({ theme }) => theme.colors.black900};
        color: ${({ theme }) => theme.colors.white};
@@ -57,12 +57,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: inherit;
+    /* color: inherit; */
     text-decoration: none;
     background: none;
     cursor: pointer;
     border: 0;
     transition: 180ms ease-in-out;
+    color: ${({ theme }) => theme.colors.black900} !important;
   }
 
   button {
