@@ -13,7 +13,7 @@ export const WhitelabelBank: React.FC = () => {
     <WhitelabelBankContainer>
       <ImageContainer>
         <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/828290643805208626/screenshot-rocks.png"
+          src="https://cdn.discordapp.com/attachments/263762535763673089/828392877142179840/felipebocal.png"
           alt=""
         />
       </ImageContainer>

@@ -114,7 +114,7 @@ export const ImageContainer = styled.div`
     width: 100%;
     max-width: 80rem;
     height: auto;
-    box-shadow: ${({ theme }) => theme.shadows.default};
+    filter: drop-shadow(-10px 10px 13px ${({ theme }) => theme.colors.grey500});
     border-radius: 0.5rem;
   }
 `;
