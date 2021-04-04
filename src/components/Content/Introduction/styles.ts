@@ -5,9 +5,7 @@ export const IntroductionContainer = styled.section`
 
   margin: auto;
 
-  padding-bottom: 15rem;
-
-  padding: 0 0 15rem 1rem;
+  padding: 0 0 15rem 0;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +18,6 @@ export const IntroductionContainer = styled.section`
   }
 
   h1 {
-    /* padding-left: 1rem; */
     font-size: ${({ theme }) => theme.fontSize.huge};
     font-weight: 300;
 
