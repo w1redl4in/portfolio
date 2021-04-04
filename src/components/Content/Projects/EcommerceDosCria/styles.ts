@@ -1,15 +1,32 @@
 import styled from 'styled-components';
 
-export const EcommerceDosCriaContainer = styled.section`
+export const Info = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+
+  > time {
+    margin-top: 1rem;
+    font-size: ${({ theme }) => theme.fontSize.small};
+    font-weight: bold;
+  }
+
+  > p > a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+`;
+
+export const EcommerceDosCriaContainer = styled.section`
+  display: flex;
   justify-content: center;
   align-items: center;
 
   text-align: center;
 
-  padding-bottom: 10rem;
-  padding-top: 1rem;
+  padding: 4rem 2rem 10rem 2rem;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
 
@@ -19,6 +36,13 @@ export const EcommerceDosCriaContainer = styled.section`
 
   @media (max-width: 992px) {
     padding-top: 15rem;
+  }
+
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+    ${Info} {
+      margin-top: 3rem;
+    }
   }
 
   h1 {
@@ -31,12 +55,13 @@ export const EcommerceDosCriaContainer = styled.section`
 
   figure {
     padding: 1rem;
-  }
-  img {
-    width: 100%;
-    max-width: 80rem;
-    height: auto;
-    box-shadow: ${({ theme }) => theme.shadows.default};
-    border-radius: 0.5rem;
+
+    img {
+      width: 100%;
+      max-width: 80rem;
+      height: auto;
+      box-shadow: ${({ theme }) => theme.shadows.default};
+      border-radius: 0.5rem;
+    }
   }
 `;
