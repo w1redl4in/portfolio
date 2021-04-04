@@ -1,4 +1,10 @@
 import { NavbarContainer, NavInfo, Date } from './styles';
+import {
+  AiFillGithub,
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+} from 'react-icons/ai';
+import { theme } from '../../styles';
 
 export const Navbar: React.FC = () => {
   return (
@@ -10,16 +16,16 @@ export const Navbar: React.FC = () => {
         />
         <NavInfo>
           <a href="https://twitter.com/lainwired_" target="_blank">
-            Twitter
+            <AiFillTwitterCircle color={theme.colors.black900} />
           </a>
           <a
             href="https://www.linkedin.com/in/felipe-austriaco-dev/"
             target="_blank"
           >
-            LinkedIn
+            <AiFillLinkedin color={theme.colors.black900} />
           </a>
           <a href="https://github.com/w1redl4in" target="_blank">
-            Github
+            <AiFillGithub color={theme.colors.black900} />
           </a>
         </NavInfo>
         <Date>2021</Date>

@@ -44,8 +44,16 @@ export const NavInfo = styled.div`
 
   a {
     transition: all ${({ theme }) => theme.transitionDelay.default} ease-in-out;
-    &:hover {
-      text-decoration: underline;
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
