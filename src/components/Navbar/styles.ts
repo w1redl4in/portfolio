@@ -37,6 +37,7 @@ export const NavbarContainer = styled.nav`
 
 export const NavInfo = styled.div`
   display: flex;
+  align-items: center;
 
   a + a {
     margin-left: 2rem;
@@ -44,6 +45,12 @@ export const NavInfo = styled.div`
 
   a {
     transition: all ${({ theme }) => theme.transitionDelay.default} ease-in-out;
+
+    > img {
+      width: 2.2rem;
+      border-radius: 0;
+      height: 2.2rem;
+    }
 
     svg {
       width: 2.5rem;
