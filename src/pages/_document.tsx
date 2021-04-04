@@ -42,6 +42,11 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://cdn.discordapp.com/attachments/756656687942729731/827402807530356756/unknown.png"
           />
+          <link
+            rel="shortcut icon"
+            href="/images/favicon.png"
+            type="image/png"
+          />
         </Head>
         <body>
           <Main />
