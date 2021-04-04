@@ -25,13 +25,10 @@ export const InfoLinks = styled.div`
 
 export const WhitelabelBankContainer = styled.section`
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 
   text-align: center;
-
-  /* padding-bottom: 10rem; */
 
   @media screen and (max-width: 1280px) {
     flex-direction: column;
@@ -104,7 +101,7 @@ export const Technologies = styled.div`
   }
 `;
 
-export const Images = styled.div`
+export const ImageContainer = styled.div`
   display: flex;
 
   > img {
