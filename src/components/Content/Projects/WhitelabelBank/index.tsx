@@ -1,52 +1,82 @@
 import {
   WhitelabelBankContainer,
-  WhitelabelExamples,
   Technologies,
+  Images,
+  Info,
+  InfoLinks,
+  Tech,
 } from './styles';
-import { SiReact, SiNodeDotJs, SiTypescript } from 'react-icons/si';
-import { AiOutlineAntDesign } from 'react-icons/ai';
 
 export const WhitelabelBank: React.FC = () => {
   return (
     <WhitelabelBankContainer>
-      <h1>Hub Fintech</h1>
-      <h2>Whitelabel Bank</h2>
-      <a href="https://hubbank-internetbank.hubfintech.com.br/" target="_blank">
-        Example
-      </a>
+      <Images>
+        <img
+          src="https://cdn.discordapp.com/attachments/263762535763673089/828290643805208626/screenshot-rocks.png"
+          alt=""
+        />
+      </Images>
 
-      <figure>
-        <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/827386692922245170/unknown.png"
-          alt="first experience"
-        />
-      </figure>
-      <span>Other Examples</span>
-      <WhitelabelExamples>
-        <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/827389247144198164/unknown.png"
-          alt=""
-        />
-        <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/827392301897744404/unknown.png"
-          alt=""
-        />
-        <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/827392542290214912/unknown.png"
-          alt=""
-        />
-        <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/827392731541405776/unknown.png"
-          alt=""
-        />
-      </WhitelabelExamples>
-
-      <Technologies>
-        <SiReact color="#61dafb" />
-        <SiNodeDotJs color="#689F63" />
-        <SiTypescript color="#3178C6" />
-        <AiOutlineAntDesign />
-      </Technologies>
+      <Info>
+        <h1>Hub Fintech</h1>
+        <h2>Internet Banking Whitelabel</h2>
+        <p>
+          This was the most difficult project, but also the most rewarding, we
+          developed a digital bank from scratch with a tight deadline.
+        </p>
+        <InfoLinks>
+          <a
+            href="https://hubbank-internetbank.hubfintech.com.br/"
+            target="_blank"
+          >
+            HubBank
+          </a>
+          <a
+            href="https://fretebank-internetbank.hubfintech.com.br/"
+            target="_blank"
+          >
+            FreteBank
+          </a>
+          <a
+            href="https://edmond-internetbank.hubfintech.com.br/"
+            target="_blank"
+          >
+            Edmond
+          </a>
+          <a
+            href="https://lifesbank-internetbank.hubfintech.com.br/"
+            target="_blank"
+          >
+            LifesBank
+          </a>
+        </InfoLinks>
+        <Technologies>
+          <Tech>
+            <img src="/images/ant-design.svg" alt="" />
+            <span>Ant Design</span>
+          </Tech>
+          <Tech>
+            <img src="/images/nodejs-icon.svg" alt="" />
+            <span>Node Js</span>
+          </Tech>
+          <Tech>
+            <img src="/images/react.svg" alt="" />
+            <span>React</span>
+          </Tech>
+          <Tech>
+            <img src="/images/redux.svg" alt="" />
+            <span>Redux</span>
+          </Tech>
+          <Tech>
+            <img src="/images/redux-saga.svg" alt="" />
+            <span>Redux Saga</span>
+          </Tech>
+          <Tech>
+            <img src="/images/typescript.svg" alt="" />
+            <span>Typescript</span>
+          </Tech>
+        </Technologies>
+      </Info>
     </WhitelabelBankContainer>
   );
 };

@@ -1,14 +1,46 @@
 import styled from 'styled-components';
 
-export const WhitelabelBankContainer = styled.section`
+export const Info = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+`;
+
+export const InfoLinks = styled.div`
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.colors.black900};
+  }
+
+  a + a {
+    margin-left: 2rem;
+  }
+`;
+
+export const WhitelabelBankContainer = styled.section`
+  display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 
   text-align: center;
 
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
+
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+    ${Info} {
+      margin-top: 3rem;
+    }
+  }
+
+  padding: 0 2rem 10rem 2rem;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
 
@@ -36,14 +68,46 @@ export const WhitelabelBankContainer = styled.section`
     }
   }
 
-  span {
+  > span {
     color: ${({ theme }) => theme.colors.blue};
   }
 
   figure {
     padding: 1rem;
   }
+`;
+
+export const Technologies = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  max-width: 800px;
+
+  width: 100%;
+
   img {
+    width: 3rem;
+    height: 3rem;
+    filter: drop-shadow(0 0 10px ${({ theme }) => theme.colors.grey500});
+
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+
+  img + img {
+    margin-left: 5rem;
+  }
+`;
+
+export const Images = styled.div`
+  display: flex;
+
+  > img {
     width: 100%;
     max-width: 80rem;
     height: auto;
@@ -52,43 +116,16 @@ export const WhitelabelBankContainer = styled.section`
   }
 `;
 
-export const WhitelabelExamples = styled.div`
+export const Tech = styled.div`
   display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
 
-  img {
-    width: 100%;
-    max-width: 20rem;
-    height: auto;
-    box-shadow: ${({ theme }) => theme.shadows.default};
-    margin: 1rem;
-
-    transition: all 0.2s;
-
-    &:hover {
-      box-shadow: ${({ theme }) => theme.shadows.darker};
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-  }
-`;
-
-export const Technologies = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  max-width: 800px;
-
-  width: 100%;
-
-  svg {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  svg + svg {
-    margin-left: 5rem;
+  > span {
+    font-size: ${({ theme }) => theme.fontSize.normal};
+    color: ${({ theme }) => theme.colors.black900};
+    margin-top: 0.5rem;
   }
 `;
