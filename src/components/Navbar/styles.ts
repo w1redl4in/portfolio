@@ -24,7 +24,7 @@ export const NavbarContainer = styled.nav`
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
-      box-shadow: ${({ theme }) => theme.shadows.default};
+      filter: drop-shadow(2px 2px 10px ${({ theme }) => theme.colors.grey500});
       transition: transform ${({ theme }) => theme.transitionDelay.default};
 
       &:hover {
