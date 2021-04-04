@@ -7,7 +7,9 @@
 
 ![App Screenshot](https://cdn.discordapp.com/attachments/756656687942729731/828366414385381416/screenshot-rocks_1.png)
 
-<a align="center" href="https://felipeaustriaco.dev">Access here</a>
+<p align="center">
+  <a href="https://felipeaustriaco.dev" target="_blank">View here</a>
+</p>
 
 ## :fire: Ignite Rocketseat Journey
 
