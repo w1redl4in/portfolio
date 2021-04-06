@@ -8,7 +8,10 @@ export const TelaUnica: React.FC = () => {
       <ProjectInfo>
         <h1>Hub Fintech</h1>
         <h2>Tela Única</h2>
-        <p>This project is my first connection to the javascript world</p>
+        <p>
+          This project was my first connection with the Javascript universe, I
+          migrated from Ruby on Rails to Node.js and then to React. 💝
+        </p>
         <time>Dez 2019 — Fev 2020</time>
         <Technologies>
           {Object.entries(Icons).map(([key, value]) => (
