@@ -53,7 +53,7 @@ export const TelaUnicaContainer = styled.section`
       width: 100%;
       max-width: 60rem;
       height: auto;
-      box-shadow: ${({ theme }) => theme.shadows.default};
+      box-shadow: ${({ theme }) => theme.shadows.darker};
       border-radius: 0.5rem;
     }
   }
