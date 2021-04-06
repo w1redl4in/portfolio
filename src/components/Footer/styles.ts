@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
 
   z-index: 99999;
   position: absolute;
-  bottom: -10rem;
+  /* bottom: -10rem; */
   width: 100%;
 `;
 

@@ -27,7 +27,7 @@ export const SpotifyContainer = styled.section`
 
   text-align: center;
 
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   padding-top: 1rem;
 
   @media screen and (max-width: 1280px) {
