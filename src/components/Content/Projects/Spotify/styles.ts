@@ -27,7 +27,7 @@ export const SpotifyContainer = styled.section`
 
   text-align: center;
 
-  padding-bottom: 10rem;
+  margin-bottom: 10rem;
   padding-top: 1rem;
 
   @media screen and (max-width: 1280px) {
@@ -37,9 +37,7 @@ export const SpotifyContainer = styled.section`
     }
   }
 
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
-
-  height: auto;
+  height: 100vh;
 
   z-index: 2;
 

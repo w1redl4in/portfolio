@@ -45,9 +45,7 @@ export const WhitelabelBankContainer = styled.section`
 
   padding: 0 2rem 10rem 2rem;
 
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
-
-  height: auto;
+  height: 100vh;
 
   z-index: 2;
 
