@@ -13,7 +13,6 @@ export const IntroductionContainer = styled.section`
   height: 100vh;
 
   @media (max-width: 992px) {
-    border-bottom: 1px solid ${({ theme }) => theme.colors.grey100};
     margin-top: 6.6rem;
   }
 
@@ -26,7 +25,7 @@ export const IntroductionContainer = styled.section`
     }
 
     @media screen and (max-width: 576px) {
-      font-size: 20vw;
+      font-size: 18.5vw;
     }
 
     > span {
