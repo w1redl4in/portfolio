@@ -29,6 +29,7 @@ export const TelaUnicaContainer = styled.section`
 
   @media (max-width: 992px) {
     padding-top: 15rem;
+    margin-bottom: 15rem;
   }
 
   @media screen and (max-width: 1280px) {

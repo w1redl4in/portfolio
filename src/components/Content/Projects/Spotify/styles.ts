@@ -43,6 +43,7 @@ export const SpotifyContainer = styled.section`
 
   @media (max-width: 992px) {
     padding-top: 15rem;
+    margin-bottom: 15rem;
   }
 
   h1 {
