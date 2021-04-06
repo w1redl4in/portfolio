@@ -13,7 +13,7 @@ export const EcommerceDosCria: React.FC = () => {
       </figure>
       <Info>
         <h1>Hobby</h1>
-        <h2>E-commerce dos cria</h2>
+        <h2>ECOM DOS CRIA</h2>
         <p>
           I had an idea to start a project with longtime friends to provide the
           experience of being a programmer. It was incredible, I learned a lot
