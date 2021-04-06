@@ -1,5 +1,5 @@
 export const Icons = {
-  React: {
+  'React.js': {
     path: '/images/react.svg',
   },
   'Node.js': {
@@ -16,5 +16,14 @@ export const Icons = {
   },
   'Redux Saga': {
     path: '/images/redux-saga.svg',
+  },
+  Docker: {
+    path: '/images/docker.png',
+  },
+  Rancher: {
+    path: '/images/rancher.svg',
+  },
+  Redis: {
+    path: '/images/redis.svg',
   },
 };
