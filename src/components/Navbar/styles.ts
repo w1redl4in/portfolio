@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const NavbarContainer = styled.nav`
+type NavbarContainerProps = {
+  scrolledToTheBottom: boolean;
+};
+
+export const NavbarContainer = styled.nav<NavbarContainerProps>`
+  display: ${({ scrolledToTheBottom }) =>
+    scrolledToTheBottom ? 'none' : 'auto'};
+
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
 
@@ -71,5 +78,7 @@ export const NavInfo = styled.div`
 
 export const Date = styled.span`
   font-size: ${({ theme }) => theme.fontSize.small};
-  color: ${({ theme }) => theme.colors.grey500};
+  color: ${({ theme }) => theme.colors.black900};
+  font-weight: bold;
+  letter-spacing: 5px;
 `;

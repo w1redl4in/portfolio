@@ -5,10 +5,21 @@ import {
   AiFillLinkedin,
 } from 'react-icons/ai';
 import { theme } from '../../styles';
+import { useEffect, useState } from 'react';
 
 export const Navbar: React.FC = () => {
+  const [scrolledToTheBottom, setScrolledToTheBottom] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        setScrolledToTheBottom(true);
+      } else setScrolledToTheBottom(false);
+    };
+  }, []);
+
   return (
-    <NavbarContainer>
+    <NavbarContainer scrolledToTheBottom={scrolledToTheBottom}>
       <div>
         <img
           src="https://avatars.githubusercontent.com/u/43390533?v=4"
