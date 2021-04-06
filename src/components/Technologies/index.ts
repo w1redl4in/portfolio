@@ -32,7 +32,11 @@ export const Tech = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin: 1rem;
+  margin: 1.5rem;
+
+  @media (max-width: 992px) {
+    margin: 2rem;
+  }
 
   > span {
     font-size: ${({ theme }) => theme.fontSize.normal};
