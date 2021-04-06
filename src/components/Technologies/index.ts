@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Technologies = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
   max-width: 800px;
@@ -31,8 +31,11 @@ export const Tech = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin: 1.5rem;
+  justify-content: space-between;
+  margin: 1rem;
+
+  width: 5.4rem;
+  height: 5.4rem;
 
   @media (max-width: 992px) {
     margin: 2rem;
