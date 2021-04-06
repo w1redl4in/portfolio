@@ -61,6 +61,9 @@ export const WhitelabelBankContainer = styled.section`
 
   h2 {
     font-size: ${({ theme }) => theme.fontSize.incredibleLarge};
+    @media (max-width: 992px) {
+      font-size: ${({ theme }) => theme.fontSize.larger};
+    }
   }
 
   a {

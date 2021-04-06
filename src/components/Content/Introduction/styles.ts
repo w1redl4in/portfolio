@@ -25,7 +25,7 @@ export const IntroductionContainer = styled.section`
     }
 
     @media screen and (max-width: 576px) {
-      font-size: 18.5vw;
+      font-size: 17.5vw;
     }
 
     > span {

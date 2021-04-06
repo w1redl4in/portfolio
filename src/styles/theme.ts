@@ -11,6 +11,7 @@ export const theme = {
   fontSize: {
     huge: '96px',
     incredibleLarge: '56px',
+    larger: '36px',
     large: '26px',
     normal: '16px',
     small: '12px',
