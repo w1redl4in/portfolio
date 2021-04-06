@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 650px;
   width: 100%;
   padding: 2rem;
 
@@ -22,7 +22,7 @@ export const ProjectInfo = styled.div`
 
 export const SpotifyContainer = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   text-align: center;
@@ -60,7 +60,7 @@ export const SpotifyContainer = styled.section`
 
     img {
       width: 100%;
-      max-width: 80rem;
+      max-width: 60rem;
       height: auto;
       box-shadow: ${({ theme }) => theme.shadows.default};
       border-radius: 0.5rem;

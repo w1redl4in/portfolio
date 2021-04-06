@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 650px;
   width: 100%;
   padding: 2rem;
 
@@ -31,7 +31,7 @@ export const InfoLinks = styled.div`
 
 export const WhitelabelBankContainer = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   text-align: center;
@@ -44,7 +44,7 @@ export const WhitelabelBankContainer = styled.section`
     }
   }
 
-  padding: 0 2rem 10rem 2rem;
+  padding: 4rem 2rem 10rem 2rem;
 
   height: 100vh;
 
