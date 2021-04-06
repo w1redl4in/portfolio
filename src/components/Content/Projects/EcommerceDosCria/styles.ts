@@ -39,6 +39,7 @@ export const EcommerceDosCriaContainer = styled.section`
 
   @media screen and (max-width: 1280px) {
     flex-direction: column;
+    height: auto;
     ${Info} {
       margin-top: 3rem;
     }

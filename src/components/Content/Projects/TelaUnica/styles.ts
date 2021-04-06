@@ -34,6 +34,7 @@ export const TelaUnicaContainer = styled.section`
 
   @media screen and (max-width: 1280px) {
     flex-direction: column-reverse;
+    height: auto;
     ${ProjectInfo} {
       margin-top: 3rem;
     }

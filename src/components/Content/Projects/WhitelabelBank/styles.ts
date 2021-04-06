@@ -38,6 +38,7 @@ export const WhitelabelBankContainer = styled.section`
 
   @media screen and (max-width: 1280px) {
     flex-direction: column;
+    height: auto;
     ${Info} {
       margin-top: 3rem;
     }
@@ -107,8 +108,6 @@ export const Technologies = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  display: flex;
-
   > img {
     width: 100%;
     max-width: 80rem;
