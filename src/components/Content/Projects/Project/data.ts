@@ -31,6 +31,12 @@ export const WhitelabelBank = {
     Express: {
       path: '/images/express-109.svg',
     },
+    TypeORM: {
+      path: '/images/typeorm.png',
+    },
+    Jest: {
+      path: '/images/jest.svg',
+    },
     Insomnia: {
       path: '/images/insomnia.png',
     },
@@ -40,11 +46,20 @@ export const WhitelabelBank = {
     'Ant.Design': {
       path: '/images/ant-design.svg',
     },
+    'Framer Motion': {
+      path: '/images/framer.png',
+    },
     Redux: {
       path: '/images/redux.svg',
     },
-    Netlify: {
-      path: '/images/netlify.svg',
+    'Socket.io': {
+      path: '/images/socket-io.svg',
+    },
+    Lotties: {
+      path: '/images/lottie.png',
+    },
+    Reactotron: {
+      path: '/images/reactotron.svg',
     },
   },
 };
@@ -113,6 +128,15 @@ export const EcomDosCria = {
     },
     Express: {
       path: '/images/express-109.svg',
+    },
+    TypeORM: {
+      path: '/images/typeorm.png',
+    },
+    Jest: {
+      path: '/images/jest.svg',
+    },
+    Heroku: {
+      path: '/images/heroku.png',
     },
     Insomnia: {
       path: '/images/insomnia.png',
@@ -234,8 +258,6 @@ export const IgNews = {
     },
   },
 };
-
-//
 
 export const projects = [
   WhitelabelBank,
