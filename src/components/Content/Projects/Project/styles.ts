@@ -19,7 +19,11 @@ export const Info = styled.div`
   }
 `;
 
-export const Container = styled.section`
+type ContainerProps = {
+  reverse: boolean;
+};
+
+export const Container = styled.section<ContainerProps>`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,7 +42,7 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 1280px) {
-    flex-direction: column;
+    flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
     height: auto;
     ${Info} {
       margin-top: 3rem;

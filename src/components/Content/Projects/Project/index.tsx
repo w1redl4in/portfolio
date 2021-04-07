@@ -35,7 +35,7 @@ export const Project: React.FC<ProjectProps> = ({ project: Project }) => {
   } = Project;
 
   return (
-    <Container>
+    <Container reverse={reverse}>
       {reverse ? (
         <>
           <Info>
