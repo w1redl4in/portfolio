@@ -39,6 +39,22 @@ export const IntroductionContainer = styled.section`
 
     strong {
       font-weight: 600;
+
+      @keyframes pulse {
+        0% {
+          filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
+        }
+        50% {
+          filter: drop-shadow(0.2rem 0.2rem 1.5rem purple);
+        }
+        100% {
+          filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
+        }
+      }
+
+      > span {
+        animation: pulse 2s infinite ease-in-out;
+      }
     }
 
     h2 {
