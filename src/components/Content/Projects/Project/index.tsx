@@ -1,5 +1,8 @@
 import { Technologies, Tech } from '../../../Technologies';
 import { Container, Info, InfoLinks } from './styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 interface ProjectProps {
   project: {
@@ -34,11 +37,17 @@ export const Project: React.FC<ProjectProps> = ({ project: Project }) => {
     links,
   } = Project;
 
+  useEffect(() => {
+    Aos.init({
+      duration: 300,
+    });
+  }, []);
+
   return (
     <Container reverse={reverse}>
       {reverse ? (
         <>
-          <Info>
+          <Info data-aos="zoom-in-up">
             <h1>{company}</h1>
             <h2>{project}</h2>
             <p>{description}</p>
@@ -60,16 +69,16 @@ export const Project: React.FC<ProjectProps> = ({ project: Project }) => {
               ))}
             </Technologies>
           </Info>
-          <figure>
+          <figure data-aos="zoom-in-down">
             <img src={projectImage} alt={project} />
           </figure>
         </>
       ) : (
         <>
-          <figure>
+          <figure data-aos="zoom-in-up">
             <img src={projectImage} alt={project} />
           </figure>
-          <Info>
+          <Info data-aos="zoom-in-down">
             <h1>{company}</h1>
             <h2>{project}</h2>
             <p>{description}</p>
