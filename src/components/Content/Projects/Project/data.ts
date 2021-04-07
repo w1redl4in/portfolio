@@ -160,4 +160,89 @@ export const Spotify = {
   },
 };
 
-export const projects = [WhitelabelBank, TelaUnica, EcomDosCria, Spotify];
+export const Crunchyroll = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/756656687942729731/829445570292088893/screenshot-rocks.png',
+  company: 'Hobby',
+  project: 'Crunchyroll UI Clone',
+  description:
+    'Project created with the intention of practicing animations, styled-components and responsive media queries.',
+  time: 'March 2021 — March 2021',
+  reverse: false,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'Framer Motion': {
+      path: '/images/framer.png',
+    },
+    'styled-components': {
+      path: '/images/styled-components.svg',
+    },
+  },
+  links: {
+    'Github Pages': {
+      path: 'https://w1redl4in.github.io/crunchyroll-clone/',
+    },
+  },
+};
+
+export const Nubank = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/756656687942729731/829452654476132402/screenshot-rocks_1.png',
+  company: 'Hobby',
+  project: 'Nubank UI Clone',
+  description: 'Clone of the UI of one of the largest digital banks.',
+  time: 'Oct 2020 — Nov 2020',
+  reverse: true,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'styled-components': {
+      path: '/images/styled-components.svg',
+    },
+  },
+};
+
+export const IgNews = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/756656687942729731/829454194251399218/screenshot-rocks_2.png',
+  company: 'Study',
+  project: 'ignews',
+  description: "Chapter III of Rocketseat's Ignite Journey",
+  time: 'Mar 2020 — Apr 2020',
+  reverse: false,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'Next.js': {
+      path: '/images/nextjs.svg',
+    },
+    'Next Auth': {
+      path: '/images/next-auth.png',
+    },
+  },
+};
+
+//
+
+export const projects = [
+  WhitelabelBank,
+  TelaUnica,
+  EcomDosCria,
+  Spotify,
+  Crunchyroll,
+  Nubank,
+  IgNews,
+];
