@@ -1,4 +1,9 @@
-import { FooterContainer, SocialMedias, Contact } from './styles';
+import {
+  FooterContainer,
+  SocialMedias,
+  Contact,
+  ScrollToTopButton,
+} from './styles';
 import {
   AiFillGithub,
   AiFillTwitterCircle,
@@ -6,6 +11,7 @@ import {
   AiOutlineWhatsApp,
   AiOutlineMail,
 } from 'react-icons/ai';
+import { FaArrowCircleUp } from 'react-icons/fa';
 import { theme } from '../../styles';
 
 export const Footer: React.FC = () => {
@@ -40,6 +46,10 @@ export const Footer: React.FC = () => {
           <AiOutlineWhatsApp /> (11) 97581-2099
         </p>
       </Contact>
+      <ScrollToTopButton to="initial">
+        Take a shortcut
+        <FaArrowCircleUp />
+      </ScrollToTopButton>
     </FooterContainer>
   );
 };

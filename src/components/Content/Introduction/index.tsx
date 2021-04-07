@@ -2,7 +2,7 @@ import { IntroductionContainer } from './styles';
 
 export const Introduction: React.FC = () => {
   return (
-    <IntroductionContainer>
+    <IntroductionContainer id="initial">
       <h1>
         Hi, I'm&nbsp;
         <u>Felipe Austríaco, a.k.a</u>
