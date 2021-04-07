@@ -55,7 +55,7 @@ export const Project: React.FC<ProjectProps> = ({ project: Project }) => {
             <InfoLinks>
               {links &&
                 Object.entries(links).map(([key, value]) => (
-                  <a href={value.path} target="_blank">
+                  <a href={value.path} target="_blank" key={key}>
                     {key}
                   </a>
                 ))}
@@ -86,7 +86,7 @@ export const Project: React.FC<ProjectProps> = ({ project: Project }) => {
             <InfoLinks>
               {links &&
                 Object.entries(links).map(([key, value]) => (
-                  <a href={value.path} target="_blank">
+                  <a href={value.path} target="_blank" key={key}>
                     {key}
                   </a>
                 ))}
