@@ -13,13 +13,6 @@ export const Technologies = styled.div`
     width: 3rem;
     height: 3rem;
     filter: drop-shadow(0 0 10px ${({ theme }) => theme.colors.grey500});
-
-    transition: transform 0.2s;
-
-    &:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-    }
   }
 
   img + img {
@@ -39,6 +32,19 @@ export const Tech = styled.div`
 
   @media (max-width: 992px) {
     margin: 2rem;
+  }
+
+  &:hover {
+    img {
+      transition: all 0.2s;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    span {
+      transition: all 0.2s;
+      font-weight: 500;
+    }
   }
 
   > span {
