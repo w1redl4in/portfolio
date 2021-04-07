@@ -1,8 +1,10 @@
-import { FooterContainer, SocialMedias } from './styles';
+import { FooterContainer, SocialMedias, Contact } from './styles';
 import {
   AiFillGithub,
   AiFillTwitterCircle,
   AiFillLinkedin,
+  AiOutlineWhatsApp,
+  AiOutlineMail,
 } from 'react-icons/ai';
 import { theme } from '../../styles';
 
@@ -30,6 +32,14 @@ export const Footer: React.FC = () => {
           />
         </a>
       </SocialMedias>
+      <Contact>
+        <p>
+          <AiOutlineMail /> felipe1180@hotmail.com
+        </p>
+        <p>
+          <AiOutlineWhatsApp /> (11) 97581-2099
+        </p>
+      </Contact>
     </FooterContainer>
   );
 };

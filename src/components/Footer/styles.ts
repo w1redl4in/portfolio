@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  height: 6rem;
+  height: 9rem;
 
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ export const FooterContainer = styled.footer`
 
 export const SocialMedias = styled.div`
   display: flex;
-  max-width: 440px;
+  max-width: 300px;
   width: 100%;
 
   margin-top: 0.5rem;
@@ -26,8 +26,8 @@ export const SocialMedias = styled.div`
 
   a {
     svg {
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
       transition: transform 0.2s;
 
       &:hover {
@@ -44,6 +44,26 @@ export const SocialMedias = styled.div`
       &:hover {
         transform: scale(1.1);
       }
+    }
+  }
+`;
+
+export const Contact = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: ${({ theme }) => theme.fontSize.small};
+
+    svg {
+      margin-right: 0.5rem;
+      width: 1.2rem;
+      height: 1.2rem;
     }
   }
 `;
