@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
           <AiOutlineWhatsApp /> (11) 97581-2099
         </p>
       </Contact>
-      <ScrollToTopButton to="initial">
+      <ScrollToTopButton to="initial" smooth>
         Take a shortcut
         <FaArrowCircleUp />
       </ScrollToTopButton>
