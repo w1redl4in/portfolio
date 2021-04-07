@@ -36,6 +36,8 @@ export const Container = styled.section<ContainerProps>`
 
   z-index: 2;
 
+  position: relative;
+
   @media (max-width: 992px) {
     padding-top: 15rem;
     margin-bottom: 15rem;
