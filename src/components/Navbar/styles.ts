@@ -5,8 +5,8 @@ type NavbarContainerProps = {
 };
 
 export const NavbarContainer = styled.nav<NavbarContainerProps>`
-  display: ${({ scrolledToTheBottom }) =>
-    scrolledToTheBottom ? 'none' : 'auto'};
+  visibility: ${({ scrolledToTheBottom }) =>
+    scrolledToTheBottom ? 'hidden' : 'visible'};
 
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
