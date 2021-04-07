@@ -1,3 +1,4 @@
+import { Particles } from '../Particles';
 import { Project } from './Projects/Project';
 import { projects } from './Projects/Project/data';
 
@@ -7,6 +8,7 @@ export const Content = () => {
       {projects.map((project) => (
         <Project project={project} />
       ))}
+      <Particles />
     </>
   );
 };
