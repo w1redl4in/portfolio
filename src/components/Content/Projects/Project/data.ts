@@ -66,7 +66,7 @@ export const WhitelabelBank = {
 
 export const TelaUnica = {
   projectImage:
-    'https://cdn.discordapp.com/attachments/756656687942729731/827395212916555776/unknown.png',
+    'https://cdn.discordapp.com/attachments/756656687942729731/829470779615346738/unknown.png',
   company: 'Hub Fintech',
   project: 'Tela Única',
   description:
@@ -106,7 +106,7 @@ export const TelaUnica = {
 
 export const EcomDosCria = {
   projectImage:
-    'https://cdn.discordapp.com/attachments/756656687942729731/827397393184063488/unknown.png',
+    'https://cdn.discordapp.com/attachments/756656687942729731/829470466753822760/unknown.png',
   company: 'Hobby',
   project: 'ECOM DOS CRIA',
   description:
@@ -158,7 +158,7 @@ export const EcomDosCria = {
 
 export const Spotify = {
   projectImage:
-    'https://cdn.discordapp.com/attachments/756656687942729731/827399198054940692/unknown.png',
+    'https://cdn.discordapp.com/attachments/756656687942729731/829470115543384094/unknown.png',
   company: 'Hobby',
   project: 'Spotify Clone',
   description:
