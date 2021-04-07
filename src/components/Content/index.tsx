@@ -1,15 +1,12 @@
-import { EcommerceDosCria } from './Projects/EcommerceDosCria';
-import { Spotify } from './Projects/Spotify';
-import { TelaUnica } from './Projects/TelaUnica';
-import { WhitelabelBank } from './Projects/WhitelabelBank';
+import { Project } from './Projects/Project';
+import { projects } from './Projects/Project/data';
 
 export const Content = () => {
   return (
     <>
-      <WhitelabelBank />
-      <TelaUnica />
-      <EcommerceDosCria />
-      <Spotify />
+      {projects.map((project) => (
+        <Project project={project} />
+      ))}
     </>
   );
 };

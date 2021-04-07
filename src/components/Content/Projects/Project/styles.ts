@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProjectInfo = styled.div`
+export const Info = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 650px;
@@ -12,9 +12,18 @@ export const ProjectInfo = styled.div`
     font-size: ${({ theme }) => theme.fontSize.small};
     font-weight: bold;
   }
+
+  > p > a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 `;
 
-export const TelaUnicaContainer = styled.section`
+type ContainerProps = {
+  reverse: boolean;
+};
+
+export const Container = styled.section<ContainerProps>`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,9 +42,9 @@ export const TelaUnicaContainer = styled.section`
   }
 
   @media screen and (max-width: 1280px) {
-    flex-direction: column-reverse;
+    flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
     height: auto;
-    ${ProjectInfo} {
+    ${Info} {
       margin-top: 3rem;
     }
   }
@@ -46,18 +55,36 @@ export const TelaUnicaContainer = styled.section`
 
   h2 {
     font-size: ${({ theme }) => theme.fontSize.incredibleLarge};
+
     @media (max-width: 992px) {
       font-size: ${({ theme }) => theme.fontSize.larger};
     }
   }
 
   figure {
+    padding: 1rem;
+
     img {
       width: 100%;
-      max-width: 60rem;
+      max-width: 65rem;
       height: auto;
-      box-shadow: ${({ theme }) => theme.shadows.darker};
+      filter: drop-shadow(0 0 10px ${({ theme }) => theme.colors.grey500});
       border-radius: 0.5rem;
     }
+  }
+`;
+
+export const InfoLinks = styled.div`
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.colors.black900};
+  }
+
+  a + a {
+    margin-left: 2rem;
   }
 `;

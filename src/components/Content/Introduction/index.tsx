@@ -6,7 +6,7 @@ export const Introduction: React.FC = () => {
       <h1>
         Hi, I'm&nbsp;
         <u>Felipe Austríaco, a.k.a</u>
-        <strong> lain@cyberia. 🤗</strong>
+        <strong> w1redl4in. 🌌</strong>
         <h2>
           <span>Web Developer at </span>
           Hub Fintech
