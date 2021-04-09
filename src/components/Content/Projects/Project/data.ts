@@ -259,6 +259,35 @@ export const IgNews = {
   },
 };
 
+export const Worldtrip = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/756656687942729731/829919467874025482/unknown.png',
+  company: 'Challenger',
+  project: 'worldtrip',
+  description: "Chapter IV Chalenger of Rocketseat's Ignite Journey",
+  time: 'Apr 2020 — Now',
+  reverse: true,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'Next.js': {
+      path: '/images/nextjs.svg',
+    },
+    'Chakra UI': {
+      path: '/images/chakra-ui.png',
+    },
+  },
+  links: {
+    Demo: {
+      path: 'https://world-trip.vercel.app/',
+    },
+  },
+};
+
 export const projects = [
   WhitelabelBank,
   TelaUnica,
@@ -267,4 +296,5 @@ export const projects = [
   Crunchyroll,
   Nubank,
   IgNews,
+  Worldtrip,
 ];
