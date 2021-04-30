@@ -288,8 +288,61 @@ export const Worldtrip = {
   },
 };
 
+export const InternetBankingTreasury = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/756656687942729731/837765991210418226/unknown.png',
+  company: 'Hub Fintech',
+  project: 'Internet Banking Whitelabel Treasury Module',
+  description:
+    'Treasury module for Internet Banking Whitelabel, providing batch payments.',
+  time: 'Dez 2020 — Now',
+  reverse: true,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    'Node.js': {
+      path: '/images/nodejs-icon.svg',
+    },
+    Express: {
+      path: '/images/express-109.svg',
+    },
+    TypeORM: {
+      path: '/images/typeorm.png',
+    },
+    Jest: {
+      path: '/images/jest.svg',
+    },
+    Insomnia: {
+      path: '/images/insomnia.png',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'Ant.Design': {
+      path: '/images/ant-design.svg',
+    },
+    'Framer Motion': {
+      path: '/images/framer.png',
+    },
+    Redux: {
+      path: '/images/redux.svg',
+    },
+    'Socket.io': {
+      path: '/images/socket-io.svg',
+    },
+    Lotties: {
+      path: '/images/lottie.png',
+    },
+    Reactotron: {
+      path: '/images/reactotron.svg',
+    },
+  },
+};
+
 export const projects = [
   WhitelabelBank,
+  InternetBankingTreasury,
   TelaUnica,
   EcomDosCria,
   Spotify,
