@@ -115,8 +115,7 @@ export const EcomDosCria = {
   reverse: false,
   links: {
     Notion: {
-      path:
-        'https://www.notion.so/w1redl4in/Ecommerce-dos-cria-61a7d6a3640648e081d01ceb9bbb22a6',
+      path: 'https://www.notion.so/w1redl4in/Ecommerce-dos-cria-61a7d6a3640648e081d01ceb9bbb22a6',
     },
   },
   icons: {
@@ -340,6 +339,39 @@ export const InternetBankingTreasury = {
   },
 };
 
+export const NextWeather = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/693737591606083654/872278408338489404/bc545a88-df26-416c-bd44-02aa42543f24.png',
+  company: 'Hobby',
+  project: 'next-weather',
+  description:
+    'The main reason for this project was practicing Context API + Next.js, It uses LocalStorage for caching requests and images are shown based of climate temps + hour of the day',
+  time: 'Ago 2021 — Now',
+  reverse: false,
+  icons: {
+    'Next.js': {
+      path: '/images/nextjs.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'styled-components': {
+      path: '/images/styled-components.svg',
+    },
+    'Unsplash API': {
+      path: '/images/unsplash.jpeg',
+    },
+    'OpenWeather API': {
+      path: '/images/openweather.jpeg',
+    },
+  },
+  links: {
+    Demo: {
+      path: 'https://next-weather-orpin.vercel.app/',
+    },
+  },
+};
+
 export const projects = [
   WhitelabelBank,
   InternetBankingTreasury,
@@ -350,4 +382,5 @@ export const projects = [
   Nubank,
   IgNews,
   Worldtrip,
+  NextWeather,
 ];
