@@ -372,6 +372,41 @@ export const NextWeather = {
   },
 };
 
+export const Cryptocurrency = {
+  projectImage:
+    'https://cdn.discordapp.com/attachments/416946495502286848/934147613358440488/89a45c7e-eb6b-44b9-bab2-4eb832fbc73d.png',
+  company: 'Challenger',
+  project: 'rtk-cryptocurrency',
+  description: "Implementation of ReduxToolkit + ReduxToolkit Query with Geist UI React framework",
+  time: 'Jan 2022 — Jan 2022',
+  reverse: true,
+  icons: {
+    React: {
+      path: '/images/react.svg',
+    },
+    TypeScript: {
+      path: '/images/typescript.svg',
+    },
+    'Next.js': {
+      path: '/images/nextjs.svg',
+    },
+    'Geist UI': {
+      path: '/images/geistui.png',
+    },
+    'Redux Toolkit': {
+      path: '/images/redux.svg',
+    },
+    'Redux Toolkit Query': {
+      path: '/images/redux.svg',
+    },
+  },
+  links: {
+    Demo: {
+      path: 'https://cryptocurrency-rtk.vercel.app/',
+    },
+  },
+};
+
 export const projects = [
   WhitelabelBank,
   InternetBankingTreasury,
@@ -383,4 +418,5 @@ export const projects = [
   IgNews,
   Worldtrip,
   NextWeather,
+  Cryptocurrency,
 ];
