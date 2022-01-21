@@ -399,6 +399,9 @@ export const Cryptocurrency = {
     'Redux Toolkit Query': {
       path: '/images/redux.svg',
     },
+    'Rapid API': {
+      path: '/images/rapid-api.jpg',
+    },
   },
   links: {
     Demo: {
