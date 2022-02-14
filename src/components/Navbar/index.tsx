@@ -1,4 +1,4 @@
-import { NavbarContainer, NavInfo, Date } from './styles';
+import { NavbarContainer, NavInfo, Date as Time } from './styles';
 import {
   AiFillGithub,
   AiFillTwitterCircle,
@@ -45,7 +45,9 @@ export const Navbar: React.FC = () => {
             />
           </a>
         </NavInfo>
-        <Date>2021</Date>
+        <Time>
+          {new Date().getFullYear()}   
+        </Time>
       </div>
     </NavbarContainer>
   );
