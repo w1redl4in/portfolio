@@ -88,6 +88,8 @@ export default class MyDocument extends Document {
             href="/icons/touch-icon-ipad-retina.png"
           />
 
+
+
           <link
             rel="icon"
             type="image/png"
