@@ -1,14 +1,10 @@
-import { NavbarContainer, NavInfo, Date as Time } from './styles';
-import {
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-} from 'react-icons/ai';
-import { theme } from '../../styles';
-import { useEffect, useState } from 'react';
+import { NavbarContainer, NavInfo, Date as Time } from "./styles";
+import { useEffect, useState } from "react";
+import { useNavbarItems } from "../../hooks/use-navbar-items";
 
 export const Navbar: React.FC = () => {
   const [scrolledToTheBottom, setScrolledToTheBottom] = useState(false);
+  const { navBarItems } = useNavbarItems();
 
   useEffect(() => {
     window.onscroll = function () {
@@ -26,28 +22,19 @@ export const Navbar: React.FC = () => {
           alt="felipe me"
         />
         <NavInfo>
-          <a href="https://twitter.com/lainwired_" target="_blank">
-            <AiFillTwitterCircle color={theme.colors.black900} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/felipe-austriaco-dev/"
-            target="_blank"
-          >
-            <AiFillLinkedin color={theme.colors.black900} />
-          </a>
-          <a href="https://github.com/w1redl4in" target="_blank">
-            <AiFillGithub color={theme.colors.black900} />
-          </a>
-          <a href="https://dev.to/w1redl4in" target="_blank">
-            <img
-              src="https://cdn.discordapp.com/attachments/756656687942729731/828409591200481320/dev-black.png"
-              alt="dev to"
-            />
-          </a>
+          {navBarItems.map((navBarItem) => {
+            return navBarItem.component ? (
+              <a href={navBarItem.href} target="_blank">
+                {navBarItem.component}
+              </a>
+            ) : (
+              <a href={navBarItem.href} target="_blank">
+                <img src={navBarItem.imgSrc} alt={navBarItem.imgAlt} />
+              </a>
+            );
+          })}
         </NavInfo>
-        <Time>
-          {new Date().getFullYear()}   
-        </Time>
+        <Time>{new Date().getFullYear()}</Time>
       </div>
     </NavbarContainer>
   );
