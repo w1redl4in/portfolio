@@ -456,7 +456,7 @@ export const Midgard = {
 
 export const Nashbit = {
   projectImage:
-    "https://cdn.discordapp.com/attachments/139905137874436096/953662590184206336/unknown.png",
+    "https://cdn.discordapp.com/attachments/139905137874436096/955852720944848957/nashbit.gif",
   company: "Freelancer",
   project: "Nashbit",
   description:
