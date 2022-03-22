@@ -486,6 +486,36 @@ export const Nashbit = {
   links: {},
 };
 
+export const i18n = {
+  projectImage:
+    "https://cdn.discordapp.com/attachments/139905137874436096/955850978924572702/i18n.gif",
+  company: "Study",
+  project: "i18n-personal-blog",
+  description:
+    "Project for studying features as i18n, dark/light mode and responsive layouts",
+  time: "Mar 2022 — Now",
+  reverse: true,
+  icons: {
+    React: {
+      path: "/images/react.svg",
+    },
+    TypeScript: {
+      path: "/images/typescript.svg",
+    },
+    "Next.js": {
+      path: "/images/nextjs.svg",
+    },
+    "Chakra-UI": {
+      path: "/images/chakra-ui.png",
+    },
+  },
+  links: {
+    Demo: {
+      path: "https://i18n-personal-blog.vercel.app/",
+    },
+  },
+};
+
 export const projects = [
   WhitelabelBank,
   InternetBankingTreasury,
@@ -501,4 +531,5 @@ export const projects = [
   GitEmojiCLI,
   Midgard,
   Nashbit,
+  i18n,
 ];
