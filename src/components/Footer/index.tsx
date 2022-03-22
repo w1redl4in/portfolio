@@ -17,11 +17,11 @@ export const Footer: React.FC = () => {
       <SocialMedias>
         {navBarItems.map((navBarItem) => {
           return navBarItem.component ? (
-            <a href={navBarItem.href} target="_blank">
+            <a key={navBarItem.href} href={navBarItem.href} target="_blank">
               {navBarItem.component}
             </a>
           ) : (
-            <a href={navBarItem.href} target="_blank">
+            <a key={navBarItem.href} href={navBarItem.href} target="_blank">
               <img src={navBarItem.imgSrc} alt={navBarItem.imgAlt} />
             </a>
           );
