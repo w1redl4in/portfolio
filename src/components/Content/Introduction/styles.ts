@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const IntroductionContainer = styled.section`
   max-width: 1100px;
@@ -45,7 +45,7 @@ export const IntroductionContainer = styled.section`
           filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
         }
         50% {
-          filter: drop-shadow(0.2rem 0.2rem 1.5rem purple);
+          filter: drop-shadow(0.2rem 0.2rem 1.5rem black);
         }
         100% {
           filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
