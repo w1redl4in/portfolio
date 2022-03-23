@@ -1,4 +1,4 @@
-import { IntroductionContainer } from './styles';
+import { IntroductionContainer } from "./styles";
 
 export const Introduction: React.FC = () => {
   return (
@@ -7,8 +7,8 @@ export const Introduction: React.FC = () => {
         Hi, I'm&nbsp;
         <u>Felipe Austríaco, a.k.a</u>
         <strong>
-          {' '}
-          w1redl4in. <span>🌌</span>
+          {" "}
+          w1redl4in. <span>🙅🏽‍♂️</span>
         </strong>
         <h2>
           <span>Web Developer at </span>
