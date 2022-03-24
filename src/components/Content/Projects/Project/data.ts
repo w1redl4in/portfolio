@@ -440,6 +440,9 @@ export const Midgard = {
   time: "Fev 2022 — Now",
   reverse: true,
   icons: {
+    "Clean Arquitecture": {
+      path: "/images/clean-arquitecture.png",
+    },
     TypeScript: {
       path: "/images/typescript.svg",
     },
