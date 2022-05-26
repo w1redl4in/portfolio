@@ -67,6 +67,7 @@ export const IntroductionContainer = styled.section`
 
       > strong {
         color: ${({ theme }) => theme.colors.mercadolivre};
+        text-shadow: 0px 0px 10px #000000;
       }
     }
   }

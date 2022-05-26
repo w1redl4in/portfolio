@@ -11,7 +11,7 @@ export const Introduction: React.FC = () => {
           w1redl4in. <span>🙅🏽‍♂️</span>
         </strong>
         <h2>
-          <span>Web Developer at </span>
+          <span>Software Engineer <strong>@</strong> </span>
           <strong>Mercado Livre</strong>
         </h2>
       </h1>
