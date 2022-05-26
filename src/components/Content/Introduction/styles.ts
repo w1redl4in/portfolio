@@ -64,6 +64,10 @@ export const IntroductionContainer = styled.section`
       > span {
         font-weight: 300;
       }
+
+      > strong {
+        color: ${({ theme }) => theme.colors.mercadolivre};
+      }
     }
   }
 `;

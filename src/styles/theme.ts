@@ -7,6 +7,7 @@ export const theme = {
     grey500: '#999',
     black900: '#000000',
     transparent: 'transparent',
+    mercadolivre: '#fff159'
   },
   fontSize: {
     huge: '96px',

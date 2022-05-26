@@ -12,7 +12,7 @@ export const Introduction: React.FC = () => {
         </strong>
         <h2>
           <span>Web Developer at </span>
-          Hub Fintech
+          <strong>Mercado Livre</strong>
         </h2>
       </h1>
     </IntroductionContainer>
