@@ -42,13 +42,17 @@ export const IntroductionContainer = styled.section`
 
       @keyframes pulse {
         0% {
-          filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
+          filter: drop-shadow(
+            0.2rem 0.2rem 1.5rem ${({ theme }) => theme.colors.mercadolivre}
+          );
         }
         50% {
           filter: drop-shadow(0.2rem 0.2rem 1.5rem black);
         }
         100% {
-          filter: drop-shadow(0.2rem 0.2rem 1.5rem rgba(180, 160, 255, 1));
+          filter: drop-shadow(
+            0.2rem 0.2rem 1.5rem ${({ theme }) => theme.colors.mercadolivre}
+          );
         }
       }
 
@@ -66,8 +70,7 @@ export const IntroductionContainer = styled.section`
       }
 
       > strong {
-        color: ${({ theme }) => theme.colors.mercadolivre};
-        text-shadow: 0px 0px 10px #000000;
+        text-shadow: 5px 5px 10px ${({ theme }) => theme.colors.mercadolivre};
       }
     }
   }
